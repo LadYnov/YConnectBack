@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Yconnect_backend.database;
 
 namespace Yconnect_backend
 {
@@ -31,6 +32,8 @@ namespace Yconnect_backend
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Yconnect_backend", Version = "v1"});
             });
+
+            services.AddDbContext<YConnectContextDB>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
