@@ -1,9 +1,12 @@
-﻿namespace Yconnect_backend.database.models
+﻿using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+
+namespace Yconnect_backend.database.models
 {
     public interface IUserRepository
     {
-        public User GetUser(int id);
-        public User AddUser(User user);
-        public User DeleteUser(int id);
+        public Task<User> GetUser(int id);
+        public Task<EntityEntry<User>> AddUser(User user);
+        public Task DeleteUser(int id);
     }
 }

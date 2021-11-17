@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yconnect-backend", "Yconnect-backend\Yconnect-backend.csproj", "{33C639EC-C723-4589-A370-CD09C7E92CF7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yconnect-backend.test", "Yconnect-backend.test\Yconnect-backend.test.csproj", "{374EDFF4-8A67-46D0-94A5-3A6D834372D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{33C639EC-C723-4589-A370-CD09C7E92CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33C639EC-C723-4589-A370-CD09C7E92CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33C639EC-C723-4589-A370-CD09C7E92CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
