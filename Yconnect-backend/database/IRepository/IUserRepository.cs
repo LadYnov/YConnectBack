@@ -1,4 +1,6 @@
-﻿namespace Yconnect_backend.database.models
+﻿using Yconnect_backend.database.models;
+
+namespace Yconnect_backend.database.IRepository
 {
     public interface IUserRepository
     {
