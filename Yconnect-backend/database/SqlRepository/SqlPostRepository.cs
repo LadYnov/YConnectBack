@@ -32,24 +32,31 @@ namespace Yconnect_backend.database.SqlRepository
             return await this._contextDb.Comments.Where(x => x.PostId == iPostId).ToListAsync();
         }
 
-        public Task<IEnumerable<ReactionsPost>> GetReactionsPosts()
+        public async Task<IEnumerable<ReactionsPost>> GetReactionsPosts(int iPostId)
         {
-            throw new System.NotImplementedException();
+            return await this._contextDb.ReactionsPost.Where(x => x.PostId == iPostId).ToListAsync();
         }
 
         public async Task DeletePost(int iPostId)
         {
             Post aPost = await this._contextDb.Post.FindAsync(iPostId);
+            
+            if (aPost != null)
+            {
+                this._contextDb.Post.Remove(aPost);
+                await this._contextDb.SaveChangesAsync();
+            }
         }
 
         public Task UpdatePost(Post iPost)
         {
-            throw new System.NotImplementedException();
+            this._contextDb.Post.Update(iPost);
+            return this._contextDb.SaveChangesAsync();
         }
         
-        public Task<IEnumerable<Post>> GetPosts()
+        public async Task<IEnumerable<Post>> GetPosts()
         {
-            throw new System.NotImplementedException();
+            return await this._contextDb.Post.ToListAsync();
         }
     }
 }
