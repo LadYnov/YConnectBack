@@ -38,7 +38,7 @@ namespace Yconnect_backend
 
             services.AddDbContextPool<YConnectContextDB>(options => options.UseSqlServer(Configuration.GetConnectionString("YConnectDb")));
 
-            services.AddScoped<IPostRepository, SqlPostRepository>();
+            
             /// TODO : faire pour les autres fichiers
         }
 
