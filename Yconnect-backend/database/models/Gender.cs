@@ -10,6 +10,6 @@ namespace Yconnect_backend.database.models
         public uint Id { get; set; }
         
         [MaxLength(50)]
-        public uint GenderName { get; set; }
+        public string GenderName { get; set; }
     }
 }

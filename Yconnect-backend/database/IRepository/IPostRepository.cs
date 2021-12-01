@@ -10,7 +10,7 @@ namespace Yconnect_backend.database.IRepository
         public Task<Post> GetById(int iPostId);
         public Task AddPost(Post iPost);
         public Task<IEnumerable<Comment>> GetComments(int iPostId);
-        public Task<IEnumerable<ReactionsPost>> GetReactionsPosts();
+        public Task<IEnumerable<ReactionsPost>> GetReactionsPosts(int iPostId);
         public Task DeletePost(int iPostId);
         public Task UpdatePost(Post iPost);
 

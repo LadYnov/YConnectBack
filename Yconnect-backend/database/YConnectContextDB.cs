@@ -5,7 +5,7 @@ namespace Yconnect_backend.database
 {
     public class YConnectContextDB : DbContext
     {
-        public YConnectContextDB() : base()
+        public YConnectContextDB(DbContextOptions<YConnectContextDB> options) : base(options)
         {
 
         }
@@ -21,7 +21,6 @@ namespace Yconnect_backend.database
         public DbSet<Message> Message { get; set; }
         public DbSet<Post> Post { get; set; }
         public DbSet<PostTag> PostTags { get; set; }
-        public DbSet<Reactions> Reactions { get; set; }
         public DbSet<ReactionsComment> ReactionsComments { get; set; }
         public DbSet<ReactionsMessage> ReactionsMessages { get; set; }
         public DbSet<ReactionsPost> ReactionsPost { get; set; }
