@@ -1,8 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yconnect-backend", "Yconnect-backend\Yconnect-backend.csproj", "{33C639EC-C723-4589-A370-CD09C7E92CF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend", "YConnectBackend\YConnectBackend.csproj", "{33C639EC-C723-4589-A370-CD09C7E92CF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yconnect-backend.test", "Yconnect-backend.test\Yconnect-backend.test.csproj", "{374EDFF4-8A67-46D0-94A5-3A6D834372D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.test", "YConnectBackend.test\YConnectBackend.test.csproj", "{374EDFF4-8A67-46D0-94A5-3A6D834372D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.Domain", "YConnectBackend.Domain\YConnectBackend.Domain.csproj", "{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.Infrastructure", "YConnectBackend.Infrastructure\YConnectBackend.Infrastructure.csproj", "{BF244E4F-0C5C-444D-A0EF-38EACE728149}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +22,13 @@ Global
 		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{374EDFF4-8A67-46D0-94A5-3A6D834372D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
