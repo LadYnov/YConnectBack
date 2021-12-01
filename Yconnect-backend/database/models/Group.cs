@@ -15,7 +15,6 @@ namespace Yconnect_backend.database.models
         [ForeignKey("User")]
         public uint AdminId { get; set; }
         
-        [ForeignKey("Tag")]
-        public uint TagListId { get; set; }
+        //TODO faire une table groupTags à la place
     }
 }
