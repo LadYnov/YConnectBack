@@ -1,13 +1,8 @@
-<<<<<<<< HEAD:Yconnect-backend/database/IRepository/IUserRepository.cs
-﻿using Yconnect_backend.database.models;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Yconnect_backend.database.models;
 
 namespace Yconnect_backend.database.IRepository
-========
-﻿using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-
-namespace Yconnect_backend.database.models
->>>>>>>> realese/TRE4_API_POSTS:Yconnect-backend/database/models/IUserRepository.cs
 {
     public interface IUserRepository
     {

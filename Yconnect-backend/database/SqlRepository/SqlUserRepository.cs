@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Yconnect_backend.database.IRepository;
 using Yconnect_backend.database.models;
 
 namespace Yconnect_backend.database.SqlRepository
