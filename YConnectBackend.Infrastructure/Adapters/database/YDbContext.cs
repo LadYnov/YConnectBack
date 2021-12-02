@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using YConnectBackend.Domain.Commons;
 using YConnectBackend.Domain.Commons.Models;
 using YConnectBackend.Domain.Commons.UserAggregates;
 
@@ -24,9 +26,8 @@ namespace YConnectBackend.Infrastructure.Adapters.database
         public DbSet<Tag> Tag { get; set; }
         public DbSet<User> Users { get; set; }
 
-        public YDbContext(DbContextOptions<DbContext> options) : base(options)
+        public YDbContext(DbContextOptions<YDbContext> options) : base(options)
         {
-
         }
     }
 }

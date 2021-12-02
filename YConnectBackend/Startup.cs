@@ -5,7 +5,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using YConnectBackend.Domain.Commons.UserAggregates.Port;
 using YConnectBackend.Infrastructure.Adapters.database;
+using YConnectBackend.Infrastructure.Adapters.Domain.UserAggregate;
 
 namespace Yconnect_backend
 {
@@ -27,7 +29,12 @@ namespace Yconnect_backend
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Yconnect_backend", Version = "v1"});
             });
 
-            services.AddDbContextPool<YDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("YConnectDb")));
+            services.AddDbContextPool<YDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("YConnectDb")));
+            
+            
+            services.AddScoped<IUserRepository, UserRepository>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
