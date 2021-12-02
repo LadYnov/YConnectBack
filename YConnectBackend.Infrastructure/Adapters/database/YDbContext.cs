@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using YConnectBackend.Domain.Commons;
+﻿using Microsoft.EntityFrameworkCore;
 using YConnectBackend.Domain.Commons.Models;
 using YConnectBackend.Domain.Commons.UserAggregates;
 
