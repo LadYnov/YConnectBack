@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Yconnect_backend.Commons;
 using YConnectBackend.Domain.Commons.UserAggregates.Port;
 using YConnectBackend.Infrastructure.Adapters.database;
 using YConnectBackend.Infrastructure.Adapters.Domain.UserAggregate;
@@ -32,8 +33,7 @@ namespace Yconnect_backend
             services.AddDbContextPool<YDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("YConnectDb")));
             
-            
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddDependencies();
             
         }
 

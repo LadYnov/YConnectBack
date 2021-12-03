@@ -25,7 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\YConnectBackend\YConnectBackend.csproj" />
+      <ProjectReference Include="..\YConnectBackend.Application\YConnectBackend.Application.csproj" />
     </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@ using System;
 
 namespace YConnectBackend.Domain.Commons
 {
-    public class Entity : IEntity
+    public class Entity 
     {
         public uint Id { get; set; }
         

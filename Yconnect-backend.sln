@@ -1,12 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend", "YConnectBackend\YConnectBackend.csproj", "{33C639EC-C723-4589-A370-CD09C7E92CF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.Application", "YConnectBackend.Application\YConnectBackend.Application.csproj", "{33C639EC-C723-4589-A370-CD09C7E92CF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.test", "YConnectBackend.test\YConnectBackend.test.csproj", "{374EDFF4-8A67-46D0-94A5-3A6D834372D2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.Domain", "YConnectBackend.Domain\YConnectBackend.Domain.csproj", "{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.Infrastructure", "YConnectBackend.Infrastructure\YConnectBackend.Infrastructure.csproj", "{BF244E4F-0C5C-444D-A0EF-38EACE728149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YConnectBackend.DomainShared", "YConnectBackend.DomainShared\YConnectBackend.DomainShared.csproj", "{0B46FBFE-086A-48D8-A67F-59341AD14BB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{050DD80C-6313-4FFE-ACA7-5660E3EAD22E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5748D2EB-34E3-447C-9CFB-DD14F184C930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +36,16 @@ Global
 		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF244E4F-0C5C-444D-A0EF-38EACE728149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B46FBFE-086A-48D8-A67F-59341AD14BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B46FBFE-086A-48D8-A67F-59341AD14BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B46FBFE-086A-48D8-A67F-59341AD14BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B46FBFE-086A-48D8-A67F-59341AD14BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33C639EC-C723-4589-A370-CD09C7E92CF7} = {050DD80C-6313-4FFE-ACA7-5660E3EAD22E}
+		{6E9F8FFA-BC05-4F9C-ABB0-2FCEA250DE0C} = {050DD80C-6313-4FFE-ACA7-5660E3EAD22E}
+		{0B46FBFE-086A-48D8-A67F-59341AD14BB7} = {050DD80C-6313-4FFE-ACA7-5660E3EAD22E}
+		{BF244E4F-0C5C-444D-A0EF-38EACE728149} = {050DD80C-6313-4FFE-ACA7-5660E3EAD22E}
+		{374EDFF4-8A67-46D0-94A5-3A6D834372D2} = {5748D2EB-34E3-447C-9CFB-DD14F184C930}
 	EndGlobalSection
 EndGlobal

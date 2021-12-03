@@ -15,9 +15,10 @@ namespace YConnectBackend.Domain.Commons.Database
         Task<AggregateRoot> AddAsync(AggregateRoot entity);
         Task AddRangeAsync(IEnumerable<AggregateRoot> entities);
         Task<AggregateRoot> UpdateAsync(AggregateRoot entity);
-
         Task<ICollection<AggregateRoot>> FilterAsync(Expression<Func<AggregateRoot, bool>> func);
         Task<ICollection<TReturn>> FilterReadOnlyAsync<TReturn>(Expression<Func<AggregateRoot, bool>> func);
-       
+        Task<int> CountAsync(Expression<Func<AggregateRoot, bool>> func);
+        Task RollbackAsync();
+        Task CommitAsync();
     }
 }

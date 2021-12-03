@@ -3,10 +3,12 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>Yconnect_backend</RootNamespace>
+        <AssemblyName>YConnectBackend.Application</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="AutoMapper" Version="10.1.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
