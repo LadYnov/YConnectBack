@@ -9,7 +9,7 @@ using Yconnect_backend.Commons;
 using YConnectBackend.Domain.Commons.UserAggregates.Port;
 using YConnectBackend.Infrastructure.Adapters.database;
 using YConnectBackend.Infrastructure.Adapters.Domain.UserAggregate;
-
+//Startup projetct
 namespace Yconnect_backend
 {
     public class Startup
